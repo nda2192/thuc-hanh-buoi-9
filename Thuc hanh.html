@@ -6,10 +6,11 @@
     <title>Thuc Hanh Buoi 9</title>
 </head>
 <body>
-    <button type="button" onclick="showMessage();">Click Me!</button>
+    <div id="messageDiv"></div>
+<button type="button" onclick="showMessage();">Click Me!</button>
 <script>
  function showMessage(){
-     alert('Xin chào!');
+     document.getElementById('messageDiv').innerHTML = 'Xin chào!';
  }
 </script>
 
