@@ -11,20 +11,36 @@
     <h1>Calculator</h1>
     <input type="text" style="width: 100;" id="sothunhat">
     <input type="text" style="width: 100;" id="sothuhai"><br><br>
-    <button id="cong" onclick="tong()">Cộng(+)</button>
-    <button id="tru" onclick="">Trừ(-)</button>
-    <button id="nhan" onclick="">Nhân(x)</button>
-    <button id="chia" onclick="">Chia(/)</button><br>
-    
+    <input type="button" id="cong" onclick="tong()" style="width: 60px" value="Cộng(+)"></input>
+    <input type="button" id="tru" onclick="hieu()" style="width: 60px" value="Trừ(-)"></input>
+    <input type="button" id="nhan" onclick="tich()" style="width: 60px" value="Nhân(x)"></input>
+    <input type="button" id="chia" onclick="thuong()" style="width: 60px" value="Chia(/)"></input><br>
+    <p id="ketqua"></p>
 
-    <script>
-
-        
+    <script>        
         function tong(){
-            let a = number(document.getElementById("sothunhat"))
-            let b = number(document.getElementById("sothuhai"))
-            let tong = a + b
-            document.write("Ket qua la " + tong)
+            let a = document.getElementById("sothunhat").value
+            let b = document.getElementById("sothuhai").value
+            let tong = Number(a) + Number(b)
+            document.getElementById("ketqua").innerText = ("ket qua la " + tong)
+        } 
+        function hieu(){
+            let a = document.getElementById("sothunhat").value
+            let b = document.getElementById("sothuhai").value
+            let hieu = Number(a) - Number(b)
+            document.getElementById("ketqua").innerText = ("ket qua la " + hieu)
+        } 
+        function tich(){
+            let a = document.getElementById("sothunhat").value
+            let b = document.getElementById("sothuhai").value
+            let tich = Number(a) * Number(b)
+            document.getElementById("ketqua").innerText = ("ket qua la " + tich)
+        } 
+        function thuong(){
+            let a = document.getElementById("sothunhat").value
+            let b = document.getElementById("sothuhai").value
+            let thuong = Number(a) / Number(b)
+            document.getElementById("ketqua").innerText = ("ket qua la " + thuong)
         } 
         
     </script>
