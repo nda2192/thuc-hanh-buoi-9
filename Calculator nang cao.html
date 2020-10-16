@@ -17,53 +17,53 @@
 <body>
     <table>
         <tr>
-            <td colspan="4"><input type="text" style="width: 220px; text-align: right; height: 30px;" id="display" value="0"></td>
+            <td colspan="4"><input type="text" style="width: 220px; text-align: right; height: 30px;" id="display"
+                    value="0" disabled></td>
         </tr>
         <tr>
-            <td><input type="button" id="mongoac" value="(" style="width: 50px; background-color: rgb(177, 177, 177);"
-                    onclick="">
+            <td><button id="mongoac" style="width: 50px; background-color: yellow;">(</button>
             </td>
-            <td><input type="button" id="dongngoac" value=")"
-                    style="width: 50px; background-color: rgb(177, 177, 177);"></td>
-            <td><input type="button" id="phantram" value="%" style="width: 50px; background-color: rgb(177, 177, 177);">
+            <td><button id="dongngoac" style="width: 50px; background-color: yellow;">)</button></td>
+            <td><button id="phantram" style="width: 50px; background-color: yellow;">%</button>
             </td>
-            <td><input type="button" id="ac" value="AC" style="width: 50px; background-color: rgb(177, 177, 177);"></td>
+            <td><button id="ac" style="width: 50px; background-color: yellow;">AC</button></td>
         </tr>
         <tr>
-            <td><input type="button" id="so1" value="1" style="width: 50px;"></td>
-            <td><input type="button" id="so2" value="2" style="width: 50px;"></td>
-            <td><input type="button" id="so3" value="3" style="width: 50px;"></td>
-            <td><input type="button" id="cong" value="+" style="width: 50px; background-color: rgb(177, 177, 177);">
-            </td>
+            <td><button id="so1" style="width: 50px " value="1">1</button></td>
+            <td><button id="so2" style="width: 50px " value="2">2</button></td>
+            <td><button id="so3" style="width: 50px " value="3">3</button></td>
+            <td><button id="cong" style="width: 50px; background-color: yellow;" value="+">+</button></td>
         </tr>
         <tr>
-            <td><input type="button" id="so4" value="4" style="width: 50px;"></td>
-            <td><input type="button" id="so5" value="5" style="width: 50px;"></td>
-            <td><input type="button" id="so6" value="6" style="width: 50px;"></td>
-            <td><input type="button" id="tru" value="-" style="width: 50px; background-color: rgb(177, 177, 177);">
-            </td>
+            <td><button id="so4" style="width: 50px " value="4">4</button></td>
+            <td><button id="so5" style="width: 50px " value="5">5</button></td>
+            <td><button id="so6" style="width: 50px " value="6">6</button></td>
+            <td><button id="tru" style="width: 50px; background-color: yellow;" value="-">-</button></td>
+        </tr>
         </tr>
         <tr>
-            <td><input type="button" id="so7" value="7" style="width: 50px;"></td>
-            <td><input type="button" id="so8" value="8" style="width: 50px;"></td>
-            <td><input type="button" id="so9" value="9" style="width: 50px;"></td>
-            <td><input type="button" id="nhan" value="x" style="width: 50px; background-color: rgb(177, 177, 177);">
+            <td><button id="so7" style="width: 50px " value="7" onclick="so7()">7</button></td>
+            <td><button id="so8" style="width: 50px " value="8">8</button></td>
+            <td><button id="so9" style="width: 50px " value="9">9</button></td>
+            <td><button id="nhan" style="width: 50px; background-color: yellow;" value="x">x</button></td>
             </td>
         </tr>
         <tr>
-            <td><input type="button" id="so0" value="0" style="width: 50px;"></td>
-            <td><input type="button" id="daucham" value="." style="width: 50px;"></td>
-            <td><input type="button" id="daubang" value="=" style="width: 50px;"></td>
-            <td><input type="button" id="chia" value="/" style="width: 50px; background-color: rgb(177, 177, 177);">
+            <td><button id="so0" style="width: 50px " value="0">0</button></td>
+            <td><button id="daucham" style="width: 50px " value=".">.</button></td>
+            <td><button id="daubang" style="width: 50px " value="=">=</button></td>
+            <td><button id="chia" style="width: 50px; background-color: yellow;" value="/">/</button></td>
             </td>
-        </tr>        
+        </tr>
     </table>
     <script>
-        document.getElementById("so1").addEventListener("click",function(){
-            let giatri = 1
-            document.getElementById("display").innerHTML = giatri
-        })
+        
+        function so7(){
+            let num7 = document.getElementById("so7").value
+            document.getElementById("display").innerText = number(vl)
+        }
     </script>
+
 </body>
 
 </html>
